@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project - Tailwind Hero Landing Page</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-orange-100 via-orange-50 to-white text-gray-800 font-sans antialiased relative">
+
+  <!-- Sticky Navbar -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-orange-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-2 font-bold text-xl text-gray-900">
+        <span class="text-orange-500 text-2xl">✦</span>
+        <span>Project</span>
+      </a>
+
+      <!-- Navigation Links & CTA -->
+      <div class="flex items-center space-x-8">
+        <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+          <a href="#product" class="hover:text-black transition">Product</a>
+          <a href="#solutions" class="hover:text-black transition">Solutions</a>
+          <a href="#resources" class="hover:text-black transition">Resources</a>
+          <a href="#pricing" class="hover:text-black transition">Pricing</a>
+          <a href="#login" class="hover:text-black transition">Log in</a>
+        </nav>
+        <a href="#get-ai-free" class="bg-black hover:bg-gray-800 text-white text-sm font-medium px-4 py-2.5 rounded-lg transition shadow-sm">
+          Get AI free
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="relative px-6 pt-16 pb-32 max-w-7xl mx-auto text-center">
+    
+    <!-- Headline & Subtitle -->
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
+        Write, plan, share.<br />
+        <span class="text-black">With AI at your side.</span>
+      </h1>
+      <p class="mt-6 text-base sm:text-lg text-gray-600 leading-relaxed">
+        Project is a modern digital workspace platform that helps teams write, plan, and collaborate efficiently with the support of integrated AI tools.
+      </p>
+
+      <!-- Call-To-Action Buttons -->
+      <div class="relative mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#get-started" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-black hover:bg-gray-800 text-white font-medium rounded-lg shadow-sm transition">
+          Get AI free &rarr;
+        </a>
+        <a href="#demo" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-sm transition">
+          Request a demo
+        </a>
+      </div>
+    </div>
+
+    <!-- Dashboard Preview Container (Relative context for floating cards) -->
+    <div class="relative mt-16 max-w-4xl mx-auto">
+      
+      <!-- Main Dashboard Image Container -->
+      <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200/80 bg-white">
+        <img 
+          src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80" 
+          alt="Project Dashboard Preview" 
+          class="w-full h-auto object-cover max-h-[500px]"
+        />
+      </div>
+
+      <!-- Floating Card 1: Tasks Card (Left side) -->
+      <div class="absolute -bottom-6 -left-4 sm:-left-8 sm:bottom-12 bg-white/95 backdrop-blur shadow-xl rounded-xl p-3.5 border border-gray-100 flex items-center space-x-3 z-20">
+        <div class="w-9 h-9 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center text-lg font-bold">
+          📋
+        </div>
+        <div class="text-left">
+          <p class="text-xs font-semibold text-gray-900">12 tasks completed today</p>
+          <p class="text-[11px] text-gray-400">Updated 5m ago</p>
+        </div>
+      </div>
+
+      <!-- Floating Card 2: Project Status Card (Top-Right side) -->
+      <div class="absolute -top-6 -right-3 sm:-right-6 sm:top-8 bg-white/95 backdrop-blur shadow-xl rounded-xl p-3.5 border border-gray-100 flex items-center space-x-3 z-20">
+        <div class="w-9 h-9 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center text-base font-bold">
+          ✓
+        </div>
+        <div class="text-left">
+          <p class="text-[11px] font-medium text-gray-400">Status</p>
+          <p class="text-xs font-bold text-gray-900">On Track</p>
+        </div>
+      </div>
+
+      <!-- Floating Card 3: Team Activity Card (Bottom-Right side) -->
+      <div class="absolute -bottom-10 right-2 sm:right-6 sm:bottom-4 bg-white/95 backdrop-blur shadow-xl rounded-xl p-3.5 border border-gray-100 flex items-center space-x-3 z-20">
+        <div class="flex -space-x-2 overflow-hidden">
+          <img class="inline-block h-7 w-7 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=64&q=80" alt="Avatar" />
+          <img class="inline-block h-7 w-7 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=64&q=80" alt="Avatar" />
+          <img class="inline-block h-7 w-7 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=64&q=80" alt="Avatar" />
+        </div>
+        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">+5 online</span>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Fixed Chat Widget (Bottom-right corner) -->
+  <aside class="fixed bottom-6 right-6 z-50">
+    <button 
+      type="button" 
+      aria-label="Open support chat" 
+      class="w-13 h-13 p-3.5 bg-black hover:bg-gray-800 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-105 active:scale-95 transition"
+    >
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
+      </svg>
+    </button>
+  </aside>
+
+</body>
+</html>
