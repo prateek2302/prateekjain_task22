@@ -14,4 +14,4 @@
 
 ## Submission Setup
 1. Place `index.html` and `Readme.md` inside your project folder.
-2. Compress the folder into a zip file named: `YourName_Task20.zip`.
+2. Compress the folder into a zip file named: `YourName_Task22.zip`.
