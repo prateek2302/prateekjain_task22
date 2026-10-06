@@ -1,4 +1,4 @@
-# Task 20: Tailwind Hero Landing Page - Project Workspace
+# Task 22: Tailwind Hero Landing Page - Project Workspace
 
 ## Features
 - **Tailwind CSS CDN Integration**: Built strictly using Tailwind CSS utility classes without external custom CSS stylesheets.
